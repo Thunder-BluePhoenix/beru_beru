@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-24 22:53:44.298009",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "id_card",
+  "id_card_no",
+  "column_break_bpck",
+  "dob",
+  "age",
+  "age_type",
+  "age_category"
+ ],
+ "fields": [
+  {
+   "fieldname": "age",
+   "fieldtype": "Float",
+   "label": "Age",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "age_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Age Category",
+   "options": "\nInfant\nChild\nAdult\nSenior Citizen"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bpck",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DOB",
+   "reqd": 1
+  },
+  {
+   "default": "Year",
+   "fieldname": "age_type",
+   "fieldtype": "Select",
+   "label": "Age Type",
+   "options": "\nDay\nWeek\nMonth\nYear"
+  },
+  {
+   "bold": 1,
+   "fieldname": "id_card",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "ID Card",
+   "options": "ID Card"
+  },
+  {
+   "depends_on": "eval:doc.id_card ;",
+   "fieldname": "id_card_no",
+   "fieldtype": "Data",
+   "label": "ID Card No.",
+   "mandatory_depends_on": "eval:doc.id_card ;"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-25 00:01:43.661837",
+ "modified_by": "Administrator",
+ "module": "Beru Beru",
+ "name": "Customer Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
