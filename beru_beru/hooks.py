@@ -146,6 +146,9 @@ doctype_js = {"Lead":"public/js/lead.js"}
 # 	}
 # }
 
+doc_events={
+    "Lead":{"before_save":"beru_beru.beru_beru.overrides.lead.age_update"}
+}
 # Scheduled Tasks
 # ---------------
 

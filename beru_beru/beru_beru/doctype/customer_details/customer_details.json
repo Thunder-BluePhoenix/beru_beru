@@ -20,7 +20,7 @@
  "fields": [
   {
    "fieldname": "age",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "label": "Age",
    "non_negative": 1
   },
@@ -87,7 +87,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-05-25 10:01:03.013755",
+ "modified": "2025-05-28 00:09:18.608590",
  "modified_by": "Administrator",
  "module": "Beru Beru",
  "name": "Customer Details",
